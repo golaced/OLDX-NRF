@@ -13,7 +13,15 @@ $RECYCLE.BIN/
 *.msi
 *.msm
 *.msp
-
+*.o
+*.d
+*.crf
+*.dep
+*.hex
+*.axf
+*.map
+*.htm
+OBJ/
 # Windows shortcuts
 *.lnk
 
