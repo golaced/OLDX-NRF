@@ -228,8 +228,8 @@ struct _FLY fly_controller,fly_controller_r;
 		  data_check_float(&fly_controller.set.spd_alt,&fly_controller_r.set.spd_alt , ((vs16)(*(data_buf+8)<<8)|*(data_buf+9)),-500,500);
 	    fly_controller.now.spd_alt = ((vs16)(*(data_buf+10)<<8)|*(data_buf+11));
 			fly_controller.now.thr = ((vs16)(*(data_buf+12)<<8)|*(data_buf+13));
-		  data_check_int(&fly_controller.now.alt_bmp ,&fly_controller_r.now.alt_bmp , ((vs16)(*(data_buf+14)<<8)|*(data_buf+15))/10,-10*100,10*100);
-		  data_check_int(&fly_controller.now.alt_fushion ,&fly_controller_r.now.alt_fushion , ((vs16)(*(data_buf+16)<<8)|*(data_buf+17))/10,-10*100,10*100);
+		  data_check_int(&fly_controller.now.alt_bmp ,&fly_controller_r.now.alt_bmp , ((vs16)(*(data_buf+14)<<8)|*(data_buf+15)),-10100,10100);
+		  data_check_int(&fly_controller.now.alt_fushion ,&fly_controller_r.now.alt_fushion , ((vs16)(*(data_buf+16)<<8)|*(data_buf+17)),-10100,10100);
 		
 	}
 			else if(*(data_buf+2)==0x04)								//·É¿ØÄ£Ê½
